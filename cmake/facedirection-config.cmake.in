@@ -1,0 +1,54 @@
+# facedirection CMake config file
+#
+# This file sets the following variables:
+# facedirection_FOUND - Always TRUE.
+# facedirection_INCLUDE_DIRS - Directories containing the facedirection include files.
+# facedirection_IDL_DIRS - Directories containing the facedirection IDL files.
+# facedirection_LIBRARIES - Libraries needed to use facedirection.
+# facedirection_DEFINITIONS - Compiler flags for facedirection.
+# facedirection_VERSION - The version of facedirection found.
+# facedirection_VERSION_MAJOR - The major version of facedirection found.
+# facedirection_VERSION_MINOR - The minor version of facedirection found.
+# facedirection_VERSION_REVISION - The revision version of facedirection found.
+# facedirection_VERSION_CANDIDATE - The candidate version of facedirection found.
+
+message(STATUS "Found facedirection-@PROJECT_VERSION@")
+set(facedirection_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(facedirection_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(facedirection_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(facedirection_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(facedirection_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(facedirection_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(facedirection_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(facedirection_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(facedirection_VERSION @PROJECT_VERSION@)
+set(facedirection_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(facedirection_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(facedirection_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(facedirection_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

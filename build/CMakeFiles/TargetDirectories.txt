@@ -1,0 +1,7 @@
+C:/workspace/facedirection/build/src/CMakeFiles/facedirection.dir
+C:/workspace/facedirection/build/CMakeFiles/uninstall.dir
+C:/workspace/facedirection/build/CMakeFiles/ALL_BUILD.dir
+C:/workspace/facedirection/build/src/CMakeFiles/ALL_IDL_TGT.dir
+C:/workspace/facedirection/build/CMakeFiles/ZERO_CHECK.dir
+C:/workspace/facedirection/build/doc/CMakeFiles/doxygen_doc.dir
+C:/workspace/facedirection/build/src/CMakeFiles/facedirectionComp.dir

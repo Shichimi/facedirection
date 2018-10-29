@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/workspace/facedirection/cmake/CMakeLists.txt
+C:/workspace/facedirection/cmake/facedirection.pc.in
+C:/workspace/facedirection/cmake/facedirection-config.cmake.in
+C:/workspace/facedirection/cmake/facedirection-config-version.cmake.in

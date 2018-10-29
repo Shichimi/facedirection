@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\workspace\facedirection\doc\CMakeLists.txt" />
+    <CustomBuild Include="C:\workspace\facedirection\build\CMakeFiles\eaa7306db6bcdbf2f2bd0d7b4bd2714b\doxygen_doc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\workspace\facedirection\build\doc\CMakeFiles\doxygen_doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{86C4828E-9B94-49A8-8670-090C30E5CB1E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
