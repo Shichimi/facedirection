@@ -25,15 +25,15 @@
 # If you want to load component specific configuration file, please
 # uncomment the following line.
 #
-# Exampl.facedirection.config_file: facedirection.conf
+# Category.facedirection.config_file: facedirection.conf
 # or
-# Exampl.facedirection0.config_file: facedirection0.conf
-# Exampl.facedirection1.config_file: facedirection1.conf
-# Exampl.facedirection2.config_file: facedirection2.conf
+# Category.facedirection0.config_file: facedirection0.conf
+# Category.facedirection1.config_file: facedirection1.conf
+# Category.facedirection2.config_file: facedirection2.conf
 #
 #------------------------------------------------------------
 
-Exampl.facedirection.config_file: facedirection.conf
+Category.facedirection.config_file: facedirection.conf
 
 #
 # Please delete the following part if you are familiar with OpenRTM's

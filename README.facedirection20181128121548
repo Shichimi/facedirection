@@ -20,8 +20,8 @@
 Module Name: facedirection
 Description: ModuleDescription
 Version:     1.0.0
-Vendor:      NanamiSaito
-Category:    Exampl
+Vendor:      VenderName
+Category:    Category
 Kind:        DataFlowComponent
 Comp. Type:  STATIC
 Act. Type:   PERIODIC

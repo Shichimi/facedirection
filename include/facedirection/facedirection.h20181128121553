@@ -14,7 +14,6 @@
 #include <rtm/idl/ExtendedDataTypesSkel.h>
 #include <rtm/idl/InterfaceDataTypesSkel.h>
 
-
 #include <iostream>
 #include <sstream>
 #include <vector>
@@ -34,8 +33,7 @@
 		std::stringstream ss;										\
 		ss << "failed " #ret " " << std::hex << ret << std::endl;	\
 		throw std::runtime_error( ss.str().c_str() );				\
-					}
-
+				}
 
 
 // Service implementation headers
@@ -147,7 +145,7 @@ class facedirection
    * 
    * 
    */
-   virtual RTC::ReturnCode_t onActivated(RTC::UniqueId ec_id);
+  // virtual RTC::ReturnCode_t onActivated(RTC::UniqueId ec_id);
 
   /***
    *
